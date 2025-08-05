@@ -1,0 +1,18 @@
+{
+    "modify_data": {
+        "focus_on_attributes": {
+            "attributes": ["quantity", "entity", "string"],
+            "action":  "type_selection"
+        },
+        
+        "remove_space": {
+            "attributes": ["string"],
+            "action": "type_selection"
+        },
+
+        "extract_number": {
+            "attributes": ["quantity"],
+            "action": "type_selection"
+        }
+    }
+}

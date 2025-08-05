@@ -1,0 +1,14 @@
+{
+    "modify_data": {
+        "transform_date": {
+            "attributes": ["Scheduled departure", 
+                        "Actual departure", 
+                        "Scheduled arrival", 
+                        "Actual arrival"]
+        },
+        "remove_space": {
+            "attributes": ["string"],
+            "action": "type_selection"
+        }
+    }
+}

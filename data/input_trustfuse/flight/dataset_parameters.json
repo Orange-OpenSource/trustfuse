@@ -1,0 +1,18 @@
+{
+    "entity_col_name": "Flights#",
+    "headers": [["Source",
+                "Flights#",
+                "Scheduled departure",
+                "Actual departure",
+                "Departure gate",
+                "Scheduled arrival",
+                "Actual arrival",
+                "Arrival gate"],
+                ["Flights#",
+                "Scheduled departure",
+                "Actual departure",
+                "Departure gate",
+                "Scheduled arrival",
+                "Actual arrival",
+                "Arrival gate"]]
+}

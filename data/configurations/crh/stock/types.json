@@ -1,0 +1,18 @@
+{
+    "Change %": "string",
+    "Last trading price": "string",
+    "Open price": "string",
+    "Change $": "string",
+    "Volume": "quantity",
+    "Today's high": "string",
+    "Today's low": "string",
+    "Previous close": "string",
+    "52wk High": "string",
+    "52wk Low": "string",
+    "Shares Outstanding": "quantity",
+    "P/E": "string",
+    "Market cap": "quantity",
+    "Yield": "string",
+    "Dividend": "string",
+    "EPS": "string"
+}

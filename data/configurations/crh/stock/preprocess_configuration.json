@@ -1,0 +1,11 @@
+{
+    "modify_data": {
+        "scale_units": {
+            "attributes": ["Volume", "Shares Outstanding", "Market cap"]
+        },
+        "remove_space": {
+            "attributes": ["string"],
+            "action": "type_selection"
+        }
+    }
+}

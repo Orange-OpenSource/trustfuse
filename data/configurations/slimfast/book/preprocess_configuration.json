@@ -1,0 +1,13 @@
+{
+    "modify_structure": {
+        "extract_authors": {
+            "attributes": ["Author list"]
+        }
+    },
+    "modify_data": {
+        "focus_on_attributes": {
+            "attributes": ["Author list"],
+            "action":  "custom"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "Actual arrival": "quantity",
+    "Scheduled departure": "quantity",
+    "Actual departure": "quantity",
+    "Scheduled arrival": "quantity",
+    "Departure gate": "string",
+    "Arrival gate": "string"
+}
