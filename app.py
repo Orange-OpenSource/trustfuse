@@ -1171,7 +1171,7 @@ with gr.Blocks(theme=THEME, fill_height=True) as trustfuse_demo:
                                          cleaning_done])
 
         file_output.change(display_dataset,
-                           inputs=[toggle, dataset_global, is_reset],
+                           inputs=[toggle, dataset_global, is_reset, cleaning_done],
                            outputs=[table_output,
                                    graph_output,
                                    colors_map,

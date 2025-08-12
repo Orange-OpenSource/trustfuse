@@ -125,7 +125,7 @@ def get_entity_revisions(entity_id,
     while True:
         response = None
         # Loop to ensure API response
-        while response == None:
+        while response is None:
             # Query the Wikidata API with the above query parameters
             try:
                 response = requests.get(url, params=params)
@@ -633,9 +633,11 @@ def main():
 
     print(f"# distinct users = {len(distinct_users)}")
 
-    # pickle.dump(data, open(args.stats, "wb"))
-    pickle.dump(property_labels, open('property_labels.pkl', 'wb'))
-    pickle.dump(prop_types, open(args.prop_types, 'wb'))
+    with open('property_labels.pkl', 'wb') as f:
+        pickle.dump(property_labels, f)
+
+    with open(args.prop_types, 'wb') as f:
+        pickle.dump(prop_types, f)
 
 
 if __name__ == "__main__":

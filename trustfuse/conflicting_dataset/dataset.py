@@ -257,11 +257,6 @@ class Dataset:
 
 
     def print_table(self, metrics):
-        """_summary_
-
-        Args:
-            metrics (_type_): _description_
-        """
         for bid, result in self.fmt_fused_data.items():
             print(f"Bucket level: precision={round(metrics['buckets'][bid]['b_p'], 2)}  "
                 f"recall={round(metrics['buckets'][bid]['b_r'], 2)}  "
@@ -415,18 +410,16 @@ class DynamicDataset(Dataset):
                 edges = []
                 for partial_order in partial_orders[attr]:
                     max_depth = len(partial_order) - 1
-                    partial_order_reversed = partial_order.copy()
-                    partial_order_reversed.reverse()
                     roots = []
-                    for root in partial_order_reversed[0]:
+                    for root in partial_order[0]:
                         roots.append(id)
                         graph.add_node(id, label=root, depth=0, max_depth=max_depth,
                                        coeff=0 / max_depth, leaf=False, color=self.colors_map[attr])
                         id += 1
                     leaf = False
-                    for depth, more_specific_values in enumerate(partial_order_reversed[1:]):
+                    for depth, more_specific_values in enumerate(partial_order[1:]):
                         new_roots = []
-                        if depth == len(partial_order_reversed[1:]) - 1:
+                        if depth == len(partial_order[1:]) - 1:
                             leaf = True
                         for value in more_specific_values:
                             graph.add_node(id, label=value, depth=depth + 1, max_depth=max_depth,

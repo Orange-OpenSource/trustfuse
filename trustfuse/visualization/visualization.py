@@ -62,8 +62,6 @@ def visualize(dataset,
         "Ground Truth": dataset.seed_gt_data
     }
 
-    print(dataset.seed_gt_data[5])
-
     if graph not in df_mapping:
         possible_values = "\n"
         for idx, value in enumerate(df_mapping, 1):
