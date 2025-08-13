@@ -515,7 +515,8 @@ def generate_graph(bid, mode, dataset):
     
     graph_html = net.generate_html()
     graph_html = utils.fix_html(graph_html)
-    return (""" <iframe style="width: 100%; height: 600px; """
+    graph_html = graph_html.replace("height: 750px", "height: 900px")
+    return (""" <iframe style="width: 100%; height: 900px; """
             """ margin:0 auto" frameborder="0" """
             f""" srcdoc='{graph_html}'></iframe> """,
             colors_map_initialization)
