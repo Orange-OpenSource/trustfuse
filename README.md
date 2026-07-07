@@ -4,7 +4,7 @@
 
 ## :clipboard: Description
 
-This repository proposes a playground to experiment with knowledge fusion models in a knowledge graph (KG) construction context. We also propose a dataset built from the full revision history of [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) since its creation in 2012 for a Wikipedia category, which we have called [WikiConflict](trustfuse/data/input_trustfuse/wikiconflict/monuments_in_paris).
+This repository proposes a playground to experiment with knowledge fusion models in a knowledge graph (KG) construction context. We also propose a dataset built from the full revision history of [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) since its creation in 2012 for a Wikipedia category, which we have called [WikiConflict](data/input_trustfuse/wikiconflict/monuments_in_paris).
 This dataset aims to include different scenarios that correspond to real-life scenarios and challenges faced by KG construction:
 * **long-tail phenomenon**: the dataset contains limited data for a single object, which complicates the fusion task
 * **knowledge granularity**: has different levels of specificity (hierarchical or in the information)
